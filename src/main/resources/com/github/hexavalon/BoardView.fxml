@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane fx:id="root" alignment="center" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+	<columnConstraints>
+		<ColumnConstraints />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints minHeight="-Infinity" prefHeight="35.0" />
+		<RowConstraints minHeight="300.0" prefHeight="300.0" />
+	</rowConstraints>
+	<AnchorPane fx:id="titleBar" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #455A64;">
+		<Text fx:id="sizeIndicator" fill="#b0bec5" layoutX="8.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.bottomAnchor="9.0" AnchorPane.topAnchor="9.0">
+			<font>
+				<Font name="System Bold" size="12.0" />
+			</font>
+		</Text>
+		<JFXButton fx:id="resetButton" layoutX="229.0" layoutY="-1.0" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #607D8B;" text="🔄" textAlignment="CENTER" AnchorPane.bottomAnchor="-1.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="-1.0">
+			<font>
+				<Font name="System Bold" size="12.0" />
+			</font>
+		</JFXButton>
+		<JFXButton fx:id="nextButton" layoutX="193.0" layoutY="-2.0" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #607D8B;" text="⏭" textAlignment="CENTER" AnchorPane.bottomAnchor="-1.0" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="-2.0">
+			<font>
+				<Font name="System Bold" size="14.0" />
+			</font>
+		</JFXButton>
+		<JFXButton fx:id="closeButton" buttonType="RAISED" layoutX="267.0" layoutY="3.0" prefHeight="30.0" prefWidth="34.0" style="-fx-background-color: #E53935;" text="✖" textAlignment="CENTER" AnchorPane.bottomAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="-1.0">
+			<font>
+				<Font size="14.0" />
+			</font>
+		</JFXButton>
+   		<JFXButton fx:id="playButton" buttonType="RAISED" defaultButton="true" layoutX="157.0" layoutY="-1.0" prefHeight="25.0" prefWidth="34.0" style="-fx-background-color: #78909C;" text="▶" textAlignment="CENTER" AnchorPane.bottomAnchor="-1.0" AnchorPane.rightAnchor="109.0" AnchorPane.topAnchor="-1.0">
+   			<font>
+   				<Font name="System Bold" size="14.0" />
+   			</font>
+   		</JFXButton>
+      <Text fx:id="muteIndicator" fill="#78909c" layoutX="119.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mute" />
+	</AnchorPane>
+	<AnchorPane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #263238;" GridPane.columnIndex="0" GridPane.rowIndex="1">
+		<GridPane fx:id="grid" prefHeight="300.0" prefWidth="300.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+		</GridPane>
+	</AnchorPane>
+</GridPane>
